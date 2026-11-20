@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Optical company &amp; Internal Tools</title>
+<style>
+:root {
+  --bg: #0b1020;
+  --bg-card: #121a2f;
+  --bg-elev: #19233f;
+  --ink: #ecf2ff;
+  --ink-dim: #95a4c6;
+  --line: #253357;
+  --acc: #3b82f6;
+  --acc-bg: rgba(59,130,246,0.14);
+  --good: #10b981;
+  --good-bg: rgba(16,185,129,0.14);
+  --warn: #f59e0b;
+  --warn-bg: rgba(245,158,11,0.15);
+  --bad: #ef4444;
+  --bad-bg: rgba(239,68,68,0.15);
+  --purp: #a855f7;
+  --purp-bg: rgba(168,85,247,0.15);
+  --radius: 12px;
+  --font: 'Inter', system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+body.light {
+  --bg: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-elev: #f8fafc;
+  --ink: #0f172a;
+  --ink-dim: #64748b;
+  --line: #e2e8f0;
+  --acc: #2563eb;
+  --good: #059669;
+  --warn: #d97706;
+  --bad: #dc2626;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 12px 20px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 30px; font-weight: 700; font-size: 20px; }
+.sp { flex: 10; }
+button, select, input, a.btn {
+  font: inherit;
+  color: var(--ink);
+  background: var(--bg-elev);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 6px 11px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+button:hover, a.btn:hover { border-color: var(--acc); }
+
+button.purp-btn { background: var(--purp-bg); border-color: var(--purp); color: #d8b4fe; font-weight: 600; }
+button.yellow-btn { background-color: rgb(148, 25, 138); border-color: rgba(168,85,247,0.35); }
+
+button.sm { padding: 4px 8px; font-size: 12px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 999px;
+  font-size: 11.5px; font-weight: 600; border: 1px solid transparent;
+}
+
+.badge.purp { background: var(--purp-bg); color: #c084fc; border-color: rgba(168,85,247,0.35); }
+.badge.yellow { background-color: rgb(148, 25, 138); border-color: rgba(168,85,247,0.35); }
+
+div.bRunPack5{
+  width: 100px;
+  margin: auto;
+}
+
+div.bRunPack6{
+  width: 100px;
+  margin: auto;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+a:link, a:visited {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+
+}
+div.logins{
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  font-weight: 800; 
+  font-size: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span id="revealBadge">
+    <img src="C:\Users\bever\Downloads\glasses-logo-design-vector.jpg" alt="Optical Company Logo" width="60" height="45">
+  </span>
+    <h3>Opticals company</h3>
+    <div class="dropdown-content">
+
+    </div>
+    <ul>
+      <div class="dropdown">
+  <button class="dropbtn" style="min-width:340px;max-width:460px">Select an App</button> 
+  <div class="dropdown-content">
+    <li><a href="https://login.salesforce.com/" target="_blank">SalesForce</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Human_resource_management" target="_blank">Human Resource Portal</a></li>
+    <li><a href="https://claude.com/" target="_blank">Claude Chat</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Team</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Power apps</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Powerpoint</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Automate</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft SharePoint</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Forms</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Copilot</a></li>
+    <li><a href="https://m365.cloud.microsoft" target="_blank">Microsoft Edge</a></li>
+  </div>
+    </ul>
+  </div>   
+
+<button onClick="window.location.href=window.location.href">↻ Refresh Page</button>
+
+  </div>
+  <div span class="brand"></span>
+  <div class="logins">
+  <div class="bRunPack5">
+  <button id="bRunPack5" class="purp-btn" title="employee login">Employee Portal log in</button>
+  </div>
+
+  <div class="bRunPack5">
+  <button id="bRunPack6" class="yellow-btn" title="administrator login">Admin Portal log in</button>
+  </div>
+  </div>
+
+  <button id="bTheme" title="Toggle light/dark mode">◐</button>
+</header>
+
+
+</body>
+</html>
